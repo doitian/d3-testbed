@@ -44,4 +44,5 @@ svg .bordered {
 svg .koch-curve {
     stroke-width: 1;
     stroke: black;
+    stroke-linecap: round;
 }

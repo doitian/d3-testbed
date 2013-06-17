@@ -1,8 +1,5 @@
 d3 = require 'd3'
 
-dimen =
-  margin: 20
-
 drawKochCurve = (selection) ->
   width = selection.datum().width
   return if width < 3
@@ -45,15 +42,15 @@ drawKochCurve = (selection) ->
 
 drawKochSnowflake = (size) ->
   canvas = d3.select('#canvas')
-  canvas.html('')
 
-  width = height = size + dimen.margin * 2
+  viewportWidth = 300
+  viewportWidth = size if size < viewportWidth
   svg = canvas.append('svg').attr
-    width: width
-    height: height
-    viewBox: "0 0 300 300"
+    width: size
+    height: size
+    viewBox: "0 0 #{viewportWidth} #{viewportWidth}"
 
-  r = 150
+  r = viewportWidth / 2
   height = r + r * Math.cos(Math.PI / 3)
   halfEdge = r * Math.sin(Math.PI / 3)
 
@@ -70,12 +67,33 @@ drawKochSnowflake = (size) ->
   g2.datum(width: halfEdge * 2).call(drawKochCurve)
   g3.datum(width: halfEdge * 2).call(drawKochCurve)
 
+scaleCanvas = (size) ->
+  canvas = d3.select('#canvas')
+  canvas.style
+    width: size + "px"
+    height: size + "px"
+
 module.exports = ->
-  d3.select('button').on 'click', ->
+  d3.select('#start-btn').on 'click', ->
     size = d3.select('#size').property('value')
+    scale = d3.select('#scale').property('value')
 
     if isNaN(parseInt(size, 10))
       alert("Invalid size: #{size}")
+      return
+    if isNaN(parseInt(scale, 10))
+      alert("Invalid scale: #{scale}")
+      return
 
+    scaleCanvas(scale)
     drawKochSnowflake(parseInt(size, 10))
     d3.event.preventDefault()
+
+  d3.select('#scale-btn').on 'click', ->
+    scale = d3.select('#scale').property('value')
+
+    if isNaN(parseInt(scale, 10))
+      alert("Invalid scale: #{scale}")
+      return
+
+    scaleCanvas(scale)
