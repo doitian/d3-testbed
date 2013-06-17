@@ -1,0 +1,22 @@
+{
+  "name": "d3-testbed",
+  "repo": "doitian/d3-testbed",
+  "description": "Try d3",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "mbostock/d3": "*",
+    "jb55/domready": "*",
+    "matthewmueller/debounce": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "2013-06-top3-donut.js"
+  ],
+  "styles": [
+    "d3-testbed.css"
+  ]
+}

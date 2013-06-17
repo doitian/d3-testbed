@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D3 Testbed</title>
+    <meta charset='utf-8' />
+    <script src="build/build.js"></script>
+    <link rel="stylesheet" type="text/css" href="build/build.css" />
+  </head>
+  <body>
+    <p>
+      Navigate using keyboard <kbd>Left</kbd>/<kbd>Right</kbd>
+      or <kbd>h</kbd>/<kbd>l</kbd>.
+      View <a href="https://github.com/doitian/d3-testbed/blob/gh-pages/2013-06-top3-donut.coffee">source</a>
+    </p>
+
+    <div id="canvas">
+    </div>
+
+    <script>
+      var domready = require('domready');
+      domready(require('d3-testbed/2013-06-top3-donut'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+[
+  [
+    {
+      "gender": "men",
+      "target_start_age": 55,
+      "target_end_age": 64,
+      "likes": 6616
+    },
+    {
+      "gender": "men",
+      "target_start_age": 25,
+      "target_end_age": 34,
+      "likes": 2543
+    },
+    {
+      "gender": "women",
+      "target_start_age": 45,
+      "target_end_age": 54,
+      "likes": 1751
+    },
+    {
+      "gender": "men",
+      "target_start_age": 35,
+      "target_end_age": 44,
+      "likes": 3413
+    },
+    {
+      "gender": "women",
+      "target_start_age": 55,
+      "target_end_age": 64,
+      "likes": 1478
+    },
+    {
+      "gender": "men",
+      "target_start_age": 45,
+      "target_end_age": 54,
+      "likes": 6156
+    },
+    {
+      "gender": "women",
+      "target_start_age": 25,
+      "target_end_age": 34,
+      "likes": 1812
+    },
+    {
+      "gender": "women",
+      "target_start_age": 35,
+      "target_end_age": 44,
+      "likes": 1557
+    }
+  ],
+  [
+    {
+      "gender": "men",
+      "target_start_age": 55,
+      "target_end_age": 64,
+      "likes": 11
+    },
+    {
+      "gender": "men",
+      "target_start_age": 35,
+      "target_end_age": 44,
+      "likes": 36
+    },
+    {
+      "gender": "women",
+      "target_start_age": 35,
+      "target_end_age": 44,
+      "likes": 4
+    },
+    {
+      "gender": "women",
+      "target_start_age": 55,
+      "target_end_age": 64,
+      "likes": 3
+    },
+    {
+      "gender": "men",
+      "target_start_age": 45,
+      "target_end_age": 54,
+      "likes": 23
+    },
+    {
+      "gender": "men",
+      "target_start_age": 25,
+      "target_end_age": 34,
+      "likes": 5
+    },
+    {
+      "gender": "women",
+      "target_start_age": 25,
+      "target_end_age": 34,
+      "likes": 23
+    },
+    {
+      "gender": "women",
+      "target_start_age": 45,
+      "target_end_age": 54,
+      "likes": 19
+    }
+  ]
+]
