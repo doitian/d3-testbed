@@ -14,7 +14,8 @@
   "main": "index.js",
   "scripts": [
     "index.js",
-    "2013-06-top3-donut.js"
+    "2013-06-top3-donut.js",
+    "2013-06-koch-snowflake.js"
   ],
   "styles": [
     "d3-testbed.css"

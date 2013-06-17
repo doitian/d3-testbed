@@ -11,6 +11,9 @@ body {
 #canvas {
     width: 80%;
     margin: auto;
+}
+
+#canvas.bordered {
     border: 2px solid grey;
 }
 
@@ -36,4 +39,9 @@ svg .pie-ticks {
 svg .bordered {
     stroke-width: 1;
     stroke: white;
+}
+
+svg .koch-curve {
+    stroke-width: 1;
+    stroke: black;
 }

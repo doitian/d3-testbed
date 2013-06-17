@@ -1,4 +1,7 @@
-build: components index.js 2013-06-top3-donut.js d3-testbed.css
+COFFEE_FILES := $(wildcard *.coffee)
+JS_FILES := $(COFFEE_FILES:%.coffee=%.js)
+
+build: components d3-testbed.css $(JS_FILES)
 	component build --dev
 
 .SUFFIXES: .coffee .js
